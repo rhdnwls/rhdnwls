@@ -1,0 +1,17 @@
+from tkinter import*
+#import tkinter
+
+window=Tk()
+window.title("고우진")
+window.geometry("640x400+100+100")
+window.resizable(False, False)
+
+#rellef 속석 값[flat(디폴트 값) / groce / raised / ridge / soild / sumken]
+label=Label(window, text="파이썬", width=10, height=5, fg="red", relief="ridge")
+label.pack()
+
+photo_label = PhotoImage(file="C:/Users/Administrator/Desktop/dkdkdkd.png")
+label_2=Label(window, image=photo_label)
+label_2.pack()
+
+window.mainloop()
